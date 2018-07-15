@@ -1,0 +1,1 @@
+<img class="img-rounded img-responsive" src="{{asset('imageInventaris/' .$id) }}" id="" alt="inventaris">
