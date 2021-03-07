@@ -6,6 +6,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="csrf-token" content="{{ csrf_token() }}">
         <title>Sistem Informasi Manajemen Pusat Studi Biofarmaka IPB</title>
         <link rel="icon" href="{!! asset('images/logoipb.png') !!}"/>
         <!-- CSS -->
@@ -108,7 +109,12 @@
                                                 <a class="btn btn-link" href="{{ route('password.request') }}">
                                                 Forgot Your Password?
                                                 </a>
-                                            </center>     
+                                            </center>
+                                            <center>
+                                                <a class="btn btn-link" style="color:green" href="{{ asset('upload/file/userguide.docx') }}" download>
+                                                Userguide
+                                                </a>
+                                            </center>      
                                         </form>
                                     </div>
                                     @include('flash::message')
@@ -237,6 +243,7 @@
         <script src="{{asset('welcome/js/jquery-1.11.1.min.js')}}"></script>
         <script src="{{asset('welcome/bootstrap/js/bootstrap.min.js')}}"></script>
         <script src="{{asset('welcome/js/jquery.backstretch.min.js')}}"></script>
+        {{-- untuk manggil background --}}
         <script src="{{asset('welcome/js/scripts.js')}}"></script>
 {{-- <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.6.9/sweetalert2.min.js"></script>
  --}}

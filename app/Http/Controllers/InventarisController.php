@@ -105,8 +105,6 @@ class InventarisController extends Controller
      */
     public function store(Request $request)
     {
-       
-        
         // $array = explode(' ', $string, 2);
         // $input->kode_barang=$array[0];
         // $input->nama_barang=$array[1];
